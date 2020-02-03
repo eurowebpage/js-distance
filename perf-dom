@@ -1,0 +1,25 @@
+################################################################################
+# Exemple appel sans id - pour le <head> ou autre
+################################################################################
+
+################################################################################
+# Code JS à installer sur un serveur distant ex : dist1.js
+################################################################################
+
+// get the "last" script on the page
+var s = document.getElementsByTagName('script');
+s = s[s.length - 1];
+var p = document.createElement('p');
+p.innerHTML = '<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" rel="stylesheet "></head><body><h1>Hello</h1> ';
+
+s.parentNode.insertBefore(p, s);
+
+################################################################################
+# Exemple utilisation
+################################################################################
+
+- Changer à distance un rel="stylesheet "
+- changer un <script> dans le footer
+- Ramener une div complète
+- ... et bien plus
+
