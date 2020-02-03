@@ -6,10 +6,31 @@
 # Code JS à installer sur un serveur distant ex : dist1.js
 ################################################################################
 
+###############
+# ex : jQuery
+###############
+
 $(document).ready(function() {
   var myElement = $("#02");
   myElement.html("<p>Hello World!</p>");
 });
+
+################################################################################
+# Exemple intégration HTML sur le site désiré
+################################################################################
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<p id="02"></p>
+<script src="https://server-ou-site-distant.eu/dist1.js"></script>
+
+------------------------------------------------------------------------------------------------------------
+
+###################
+# ex : JavaScript
+###################
+
+var myElement = document.getElementById("02");
+myElement.innerHTML = "<p>Hello World!</p>";
 
 ################################################################################
 # Exemple intégration HTML sur le site désiré
@@ -21,7 +42,7 @@ $(document).ready(function() {
 
 
 ################################################################################
-# Exempleutilisation
+# Exemple utilisation
 ################################################################################
 
 Modifier sur plusieur site un paragraphe pour un message, mise à jours, btn appel,
