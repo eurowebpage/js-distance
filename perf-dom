@@ -10,7 +10,7 @@
 var s = document.getElementsByTagName('script');
 s = s[s.length - 1];
 var p = document.createElement('p');
-p.innerHTML = '<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" rel="stylesheet "></head><body><h1>Hello</h1> ';
+p.innerHTML = '<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.4.3/css/bootstrap.min.css" rel="stylesheet "></head><body><h1>Hello</h1> ';
 
 s.parentNode.insertBefore(p, s);
 
